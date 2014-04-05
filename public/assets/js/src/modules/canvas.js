@@ -6,12 +6,13 @@ Catan.cc = {
         // remove the old canvas if there is one
         $("#catan_canvas").remove();
         
-        var canvas = document.createElement("canvas"),
+        var SELF = this,
+            canvas = document.createElement("canvas"),
             canvas_context = canvas.getContext('2d'),
             windowDimensions = Catan.utils.getWindowSize();
 
-        this.canvas = canvas;
-        this.canvas_context = canvas_context;
+        SELF.canvas = canvas;
+        SELF.canvas_context = canvas_context;
 
         canvas.id = "catan_canvas";
         canvas.width = 0.9 * windowDimensions.width;
@@ -32,8 +33,9 @@ Catan.cc = {
     draw : function() {
         // draw a hexagon on the canvas
 
-        var canvas = this.canvas,
-            canvas_context = this.canvas_context,
+        var SELF = this,
+            canvas = SELF.canvas,
+            canvas_context = SELF.canvas_context,
             C = 200,
             A = 0.5 * C,
             B = 0.866 * C;
