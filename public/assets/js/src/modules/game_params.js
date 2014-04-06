@@ -3,27 +3,33 @@ Catan.game_params = {
     resources : [
         {
             "type"          : "Lumber",
-            "available"     : 4
+            "available"     : 4,
+            "img_asset"     : "../assets/images/resource_tiles/timber1.png"
         },
         {
             "type"          : "Sheep",
-            "available"     : 4
+            "available"     : 4,
+            "img_asset"     : "../assets/images/resource_tiles/sheep1.png"
         },
         {
             "type"          : "Ore",
-            "available"     : 3
+            "available"     : 3,
+            "img_asset"     : "../assets/images/resource_tiles/ore1.png"
         },
         {
             "type"          : "Brick",
-            "available"     : 3
+            "available"     : 3,
+            "img_asset"     : "../assets/images/resource_tiles/brick1.png"
         },
         {
             "type"          : "Wheat",
-            "available"     : 4
+            "available"     : 4,
+            "img_asset"     : "../assets/images/resource_tiles/wheat1.png"
         },
         {
             "type"          : "Desert",
-            "available"     : 1
+            "available"     : 1,
+            "img_asset"     : "../assets/images/resource_tiles/desert.png"
         }
     ],
 

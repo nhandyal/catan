@@ -108,16 +108,17 @@ Catan.resource_map = {
             }
 
             var tile_params = {
-                "adjacent_vertices" : [],
-                "resource_type" : resource.type,
-                "dice_roll" : dice_roll.value,
-                "dice_roll_probability" : dice_roll.probability,
-                "scaled_rc" : {
-                    r : scaled_r,
-                    c : scaled_c
-                },
-                "abs_rc" : SELF._convert_scaled_to_abs_rc(scaled_r, scaled_c),
-                "cubic_cord" : SELF._convert_axial_to_cube(scaled_r, scaled_c)
+                "adjacent_vertices"         : [],
+                "resource_type"             : resource.type,
+                "dice_roll"                 : dice_roll.value,
+                "dice_roll_probability"     : dice_roll.probability,
+                "scaled_rc"                 : {
+                                                r : scaled_r,
+                                                c : scaled_c
+                                            },
+                "abs_rc"                    : SELF._convert_scaled_to_abs_rc(scaled_r, scaled_c),
+                "cubic_cord"                : SELF._convert_axial_to_cube(scaled_r, scaled_c),
+                "resource_img_asset"        : resource.img_asset
             };
 
             return new resourceTile(tile_params);
@@ -139,6 +140,7 @@ Catan.resource_map = {
             this.scaled_rc = tile_params.scaled_rc;
             this.abs_rc = tile_params.abs_rc;
             this.cubic_cord = tile_params.cubic_cord;
+            this.resource_img_asset = tile_params.resource_img_asset;
             this.robber_present = false;
 
             return this;
