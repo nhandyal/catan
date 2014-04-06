@@ -11,6 +11,7 @@ SC = Catan;
 $(document).ready(function(){
     Catan.head = document.getElementsByTagName("head")[0];
     Catan.body = document.getElementsByTagName("body")[0];
+    Catan.resource_map.init(2);
     Catan.map.init();
 });
 
