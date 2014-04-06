@@ -1,58 +1,84 @@
 Catan.game_params = {
-
-    resource_types : ["Lumber", "Sheep", "Ore", "Brick", "Wheat", "Desert"],
     
-    resource_counts : {
-        "Lumber"    : 4,
-        "Sheep"     : 4,
-        "Ore"       : 3,
-        "Brick"     : 3,
-        "Wheat"     : 4,
-        "Desert"    : 1
-    },
+    resources : [
+        {
+            "type"          : "Lumber",
+            "available"     : 4
+        },
+        {
+            "type"          : "Sheep",
+            "available"     : 4
+        },
+        {
+            "type"          : "Ore",
+            "available"     : 3
+        },
+        {
+            "type"          : "Brick",
+            "available"     : 3
+        },
+        {
+            "type"          : "Wheat",
+            "available"     : 4
+        },
+        {
+            "type"          : "Desert",
+            "available"     : 1
+        }
+    ],
 
-    dice_weight_count : {
-        2 : {
-            "count"         : 1,
+    possible_dice_rolls : [
+        {
+            "value"         : 2,
+            "available"     : 1,
             "probability"   : 1
         },
-        3 : {
-            "count"         : 2,
+        {
+            "value"         : 3,
+            "available"     : 2,
             "probability"   : 2
         },
-        4 : {
-            "count"         : 2,
+        {
+            "value"         : 4,
+            "available"     : 2,
             "probability"   : 3
         },
-        5 : {
-            "count"         : 2,
+        {
+            "value"         : 5,
+            "available"     : 2,
             "probability"   : 4
         },
-        6 : {
-            "count"         : 2,
+        {
+            "value"         : 6,
+            "available"     : 2,
             "probability"   : 5
         },
-        8 : {
-            "count"         : 2,
+        {
+            "value"         : 8,
+            "available"     : 2,
             "probability"   : 5
         },
-        9 : {
-            "count"         : 2,
+        {
+            "value"         : 9,
+            "available"     : 2,
             "probability"   : 4
         },
-        10 : {
-            "count"         : 2,
+        {
+            "value"         : 10,
+            "available"     : 2,
             "probability"   : 3
         },
-        11 : {
-            "count"         : 2,
+        {
+            "value"         : 11,
+            "available"     : 2,
             "probability"   : 2
         },
-        12 : {
-            "count"         : 1,
+        {
+            "value"         : 12,
+            "available"     : 1,
             "probability"   : 1
         }
-    },
+    ],
 
     ports : [
         {

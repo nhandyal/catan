@@ -21,6 +21,12 @@ Catan.utils = {
      * [lower_bound, upper_bound]
      */
     generateRandomNumber : function(lower_bound, upper_bound) {
-        return Math.floor(Math.random() * 47) + lower_bound;
+        if(upper_bound < lower_bound) {
+            return 0;
+        }
+        
+        var range = (upper_bound - lower_bound);
+
+        return Math.floor(Math.random() * range) + lower_bound;
     }
 };
