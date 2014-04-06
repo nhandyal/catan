@@ -38,15 +38,6 @@ Catan.map = {
         svg.setAttribute("width", square_window);
         svg.setAttribute("height", square_window);
 
-
-        // initialize the tile map to a null map
-        var tileMap = SELF.tileMap;
-        for(var r = 0; r < 5; r++) {
-            for(var c = 0; c < 5; c++) {
-                tileMap[r][c] = null;
-            }
-        }
-
         var hex_tile_size = (square_window / 5) / (2 * 0.866),
             center_x = 0,
             center_y = 0,

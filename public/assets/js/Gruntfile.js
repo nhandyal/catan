@@ -23,7 +23,6 @@ module.exports = function(grunt) {
         
         jshint : {
             options : {
-                force: true,
                 globals : {
                     console : true
                 }
